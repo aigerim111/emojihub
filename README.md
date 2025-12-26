@@ -59,7 +59,7 @@ flutter pub get
 3. Сгенерируйте код моделей / retrofit:
 
 ```bash
-flutter pub run build_runner build --delete-conflicting-outputs
+dart run build_runner build --delete-conflicting-outputs
 ```
 
 4. Запуск на Android emulator (host machine):
