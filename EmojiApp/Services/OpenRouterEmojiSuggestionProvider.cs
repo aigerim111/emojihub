@@ -24,6 +24,7 @@ public class OpenRouterEmojiSuggestionProvider : IEmojiSuggestionProvider
         var apiKey = _cfg["OpenRouter:ApiKey"] ?? throw new InvalidOperationException("OpenRouter:ApiKey missing");
         var model = _cfg["OpenRouter:Model"] ?? throw new InvalidOperationException("OpenRouter:Model missing");
 
+        // ВАЖНО: просим вернуть только JSON-массив из 3 emoji (без текста)
         var prompt = $"""
         Return exactly 3 distinct emoji for "prediction of the day" topic: "{topic}".
 
