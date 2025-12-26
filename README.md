@@ -61,8 +61,9 @@ flutter pub get
 ```bash
 dart run build_runner build --delete-conflicting-outputs
 ```
+4. Замените на ваш api хост в ApiConfig
 
-4. Запуск на Android emulator (host machine):
+5. Запуск на Android emulator (host machine):
 
 ```bash
 flutter run
